@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Banco PHGS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .bank-name {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .user {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .balance {
+      font-size: 32px;
+      font-weight: bold;
+      color: #22c55e;
+    }
+
+    .label {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
 <body>
-
-<button onclick="tocarAudio()">ChatQH</button>
-
-<audio id="meuAudio" loop>
-  <source src="edbc72b07714c589d3b9342e7fb59d01.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function tocarAudio() {
-  var audio = document.getElementById("meuAudio");
-  audio.play();
-}
-</script>
-
+  <div class="card">
+    <div class="bank-name">Banco PHGS</div>
+    <div class="user">Titular: <strong>PHGS</strong></div>
+    <div class="label">Saldo disponível</div>
+    <div class="balance">R$ 1.000,00</div>
+  </div>
 </body>
 </html>
